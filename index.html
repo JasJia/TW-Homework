@@ -13,7 +13,17 @@
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
-<style type="text/css"></style>
+<style type="text/css">
+.rounded {
+    border-radius: 10px;
+    background: #cf9;
+  }
+
+ .rounded-nd{
+    border-radius: 10px;
+    background: #ff9;
+  } 
+</style>
 <style id="style-1-cropbar-clipper">
 .en-markup-crop-options {
     top: 18px !important;
@@ -23,6 +33,7 @@
     border: 2px rgba(255,255,255,.38) solid !important;
     border-radius: 4px !important;
 }
+
 
 .en-markup-crop-options div div:first-of-type {
     margin-left: 0px !important;
@@ -55,69 +66,18 @@
 
     
 
-        <div class="gray-bg" style="min-height: 194px;">
+        <div class="white-bg" style="min-height: 194px;">
         <div class="row border-bottom">
         <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
-            <div class="navbar-header">
-                <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
-                <form role="search" class="navbar-form-custom" action="">
-                    <div class="form-group">
-                        <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
-                    </div>
-                </form>
-            </div>
+        <div style="position:absolute;left:30px; top:0px; height:30px;width:55%;">
+             <h1>Cruise</h1>
+        </div>
             <ul class="nav navbar-top-links navbar-right">
                 <li>
                      <p>Signed in as <a href="">Member</a></p>   
                     
                 </li><li>
-                    
                 </li>
-                
-                <li class="dropdown">
-                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#" aria-expanded="false">
-                        <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
-                    </a>
-                    <ul class="dropdown-menu dropdown-alerts">
-                        <li>
-                            <a href="">
-                                <div>
-                                    <i class="fa fa-envelope fa-fw"></i> You have 16 messages
-                                    <span class="pull-right text-muted small">4 minutes ago</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="">
-                                <div>
-                                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers
-                                    <span class="pull-right text-muted small">12 minutes ago</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="">
-                                <div>
-                                    <i class="fa fa-upload fa-fw"></i> Server Rebooted
-                                    <span class="pull-right text-muted small">4 minutes ago</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <div class="text-center link-block">
-                                <a href="">
-                                    <strong>See All Alerts</strong>
-                                    <i class="fa fa-angle-right"></i>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-
-
                 <li>
                     <a href="">
                         <i class="fa fa-sign-out"></i> Log out
@@ -144,139 +104,104 @@
   <p><b>Agents</b> &nbsp;&nbsp;<span class="badge ">All</span> &nbsp;<span class="badge badge-info">Physical</span> &nbsp; <span class="badge">Virtual</span></p>
   <div class="col-lg-8">
                                   <div class="table-responsive">
-                                    <table class="table table-striped">
-                                        <thead>
-                                        <tr>
+                               
+<div class="panel-body" >
+            <div class = "row col-xs-12" style="margin-bottom: 10px;">
+                <div class = "row col-xs-12 rounded">
+                    <div class=" row test-margin">
+                        <div class = "row col-xs-1 ">
+                            <img alt="image" class="img-circle" src="img/profile_small.jpg">
+                        </div>
+                        <div class = "row col-xs-10 ">
+                            <div class = " col-sm-12 tl-margin">
+                                <b>bjstdmngbgr02.thoughtworks.com</b> &nbsp| idle | 192.168.1.2 | /var/lib/cruise-agent
+                            </div>
+                            <div class = "col-sm-12 tl-margin">
+                                <b>+ <u>Specify Resources</u></b> | Resources: Ubuntu <i class="fa fa-times"></i>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbspfirefox3 <i class="fa fa-times"></i>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbspcore-duo <i class="fa fa-times"></i>
+                                <div class="pull-right text-right">
+                                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-ban"></i><u> Deny</u>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <div class = "row col-xs-12" style="margin-bottom: 10px;">
+                <div class = "row col-xs-12 rounded-nd">
+                    <div class=" row test-margin">
+                        <div class = "row col-xs-1 ">
+                            <img alt="image" class="img-circle" src="img/a4.jpg" height="48px" width="48px">
+                        </div>
+                        <div class = "row col-xs-10 ">
+                            <div class = " col-sm-12 tl-margin">
+                                <b>bjstdmngbgr03.thoughtworks.com</b> &nbsp| building | 192.168.1.3 | /var/lib/cruise-agent
+                            </div>
+                            <div class = "col-sm-12 tl-margin">
+                                <b>+ <u>Specify Resources</u></b> | Resources: Ubuntu <i class="fa fa-times"></i>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbspfirefox3 <i class="fa fa-times"></i>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbspmysql <i class="fa fa-times"></i>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbspcore-duo <i class="fa fa-times"></i>
 
-                                            <th>#</th>
-                                            <th>Project </th>
-                                            <th>Name </th>
-                                            <th>Phone </th>
-                                            <th>Company </th>
-                                            <th>Completed </th>
-                                            <th>Task</th>
-                                            <th>Date</th>
-                                            <th>Action</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Project <small>This is example of project</small></td>
-                                            <td>Patrick Smith</td>
-                                            <td>0800 051213</td>
-                                            <td>Inceptos Hymenaeos Ltd</td>
-                                            <td><span class="pie" style="display: none;">0.52/1.561</span><svg class="peity" height="16" width="16"><path d="M 8 8 L 8 0 A 8 8 0 0 1 14.933563796318165 11.990700825968545 Z" fill="#1ab394"></path><path d="M 8 8 L 14.933563796318165 11.990700825968545 A 8 8 0 1 1 7.999999999999998 0 Z" fill="#d7d7d7"></path></svg></td>
-                                            <td>20%</td>
-                                            <td>Jul 14, 2013</td>
-                                            <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Alpha project</td>
-                                            <td>Alice Jackson</td>
-                                            <td>0500 780909</td>
-                                            <td>Nec Euismod In Company</td>
-                                            <td><span class="pie" style="display: none;">6,9</span><svg class="peity" height="16" width="16"><path d="M 8 8 L 8 0 A 8 8 0 0 1 12.702282018339785 14.47213595499958 Z" fill="#1ab394"></path><path d="M 8 8 L 12.702282018339785 14.47213595499958 A 8 8 0 1 1 7.999999999999998 0 Z" fill="#d7d7d7"></path></svg></td>
-                                            <td>40%</td>
-                                            <td>Jul 16, 2013</td>
-                                            <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Betha project</td>
-                                            <td>John Smith</td>
-                                            <td>0800 1111</td>
-                                            <td>Erat Volutpat</td>
-                                            <td><span class="pie" style="display: none;">3,1</span><svg class="peity" height="16" width="16"><path d="M 8 8 L 8 0 A 8 8 0 1 1 0 8.000000000000002 Z" fill="#1ab394"></path><path d="M 8 8 L 0 8.000000000000002 A 8 8 0 0 1 7.999999999999998 0 Z" fill="#d7d7d7"></path></svg></td>
-                                            <td>75%</td>
-                                            <td>Jul 18, 2013</td>
-                                            <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>Gamma project</td>
-                                            <td>Anna Jordan</td>
-                                            <td>(016977) 0648</td>
-                                            <td>Tellus Ltd</td>
-                                            <td><span class="pie" style="display: none;">4,9</span><svg class="peity" height="16" width="16"><path d="M 8 8 L 8 0 A 8 8 0 0 1 15.48012994148332 10.836839096340286 Z" fill="#1ab394"></path><path d="M 8 8 L 15.48012994148332 10.836839096340286 A 8 8 0 1 1 7.999999999999998 0 Z" fill="#d7d7d7"></path></svg></td>
-                                            <td>18%</td>
-                                            <td>Jul 22, 2013</td>
-                                            <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
-                                        </tr>
-                                        
-                                        
-                                        
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Project <small>This is example of project</small></td>
-                                            <td>Patrick Smith</td>
-                                            <td>0800 051213</td>
-                                            <td>Inceptos Hymenaeos Ltd</td>
-                                            <td><span class="pie" style="display: none;">0.52/1.561</span><svg class="peity" height="16" width="16"><path d="M 8 8 L 8 0 A 8 8 0 0 1 14.933563796318165 11.990700825968545 Z" fill="#1ab394"></path><path d="M 8 8 L 14.933563796318165 11.990700825968545 A 8 8 0 1 1 7.999999999999998 0 Z" fill="#d7d7d7"></path></svg></td>
-                                            <td>20%</td>
-                                            <td>Jul 14, 2013</td>
-                                            <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
-                                        </tr>
-                                        
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Betha project</td>
-                                            <td>John Smith</td>
-                                            <td>0800 1111</td>
-                                            <td>Erat Volutpat</td>
-                                            <td><span class="pie" style="display: none;">3,1</span><svg class="peity" height="16" width="16"><path d="M 8 8 L 8 0 A 8 8 0 1 1 0 8.000000000000002 Z" fill="#1ab394"></path><path d="M 8 8 L 0 8.000000000000002 A 8 8 0 0 1 7.999999999999998 0 Z" fill="#d7d7d7"></path></svg></td>
-                                            <td>75%</td>
-                                            <td>Jul 18, 2013</td>
-                                            <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>Gamma project</td>
-                                            <td>Anna Jordan</td>
-                                            <td>(016977) 0648</td>
-                                            <td>Tellus Ltd</td>
-                                            <td><span class="pie" style="display: none;">4,9</span><svg class="peity" height="16" width="16"><path d="M 8 8 L 8 0 A 8 8 0 0 1 15.48012994148332 10.836839096340286 Z" fill="#1ab394"></path><path d="M 8 8 L 15.48012994148332 10.836839096340286 A 8 8 0 1 1 7.999999999999998 0 Z" fill="#d7d7d7"></path></svg></td>
-                                            <td>18%</td>
-                                            <td>Jul 22, 2013</td>
-                                            <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Alpha project</td>
-                                            <td>Alice Jackson</td>
-                                            <td>0500 780909</td>
-                                            <td>Nec Euismod In Company</td>
-                                            <td><span class="pie" style="display: none;">6,9</span><svg class="peity" height="16" width="16"><path d="M 8 8 L 8 0 A 8 8 0 0 1 12.702282018339785 14.47213595499958 Z" fill="#1ab394"></path><path d="M 8 8 L 12.702282018339785 14.47213595499958 A 8 8 0 1 1 7.999999999999998 0 Z" fill="#d7d7d7"></path></svg></td>
-                                            <td>40%</td>
-                                            <td>Jul 16, 2013</td>
-                                            <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Project <small>This is example of project</small></td>
-                                            <td>Patrick Smith</td>
-                                            <td>0800 051213</td>
-                                            <td>Inceptos Hymenaeos Ltd</td>
-                                            <td><span class="pie" style="display: none;">0.52/1.561</span><svg class="peity" height="16" width="16"><path d="M 8 8 L 8 0 A 8 8 0 0 1 14.933563796318165 11.990700825968545 Z" fill="#1ab394"></path><path d="M 8 8 L 14.933563796318165 11.990700825968545 A 8 8 0 1 1 7.999999999999998 0 Z" fill="#d7d7d7"></path></svg></td>
-                                            <td>20%</td>
-                                            <td>Jul 14, 2013</td>
-                                            <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>Gamma project</td>
-                                            <td>Anna Jordan</td>
-                                            <td>(016977) 0648</td>
-                                            <td>Tellus Ltd</td>
-                                            <td><span class="pie" style="display: none;">4,9</span><svg class="peity" height="16" width="16"><path d="M 8 8 L 8 0 A 8 8 0 0 1 15.48012994148332 10.836839096340286 Z" fill="#1ab394"></path><path d="M 8 8 L 15.48012994148332 10.836839096340286 A 8 8 0 1 1 7.999999999999998 0 Z" fill="#d7d7d7"></path></svg></td>
-                                            <td>18%</td>
-                                            <td>Jul 22, 2013</td>
-                                            <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                </div></div><div class="col-lg-2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "row col-xs-12" style="margin-bottom: 10px;">
+                <div class = "row col-xs-12 rounded-nd">
+                    <div class=" row test-margin">
+                        <div class = "row col-xs-1 ">
+                            <img alt="image" class="img-circle" src="img/a6.jpg" height="48px" width="48px">
+                        </div>
+                        <div class = "row col-xs-10 ">
+                            <div class = " col-sm-12 tl-margin">
+                                <b>bjstdmngbgr04.thoughtworks.com</b> &nbsp| building | 192.168.1.4 | /var/lib/cruise-agent
+                            </div>
+                            <div class = "col-sm-12 tl-margin">
+                                <b>+ <u>Specify Resources</u></b> | Resources: Ubuntu <i class="fa fa-times"></i>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbspfirefox3 <i class="fa fa-times"></i>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbspmysql <i class="fa fa-times"></i>
+                                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbspcore-duo <i class="fa fa-times"></i>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class = "row col-xs-12" style="margin-bottom: 10px;">
+                <div class = "row col-xs-12 rounded">
+                    <div class=" row test-margin">
+                        <div class = "row col-xs-1 ">
+                            <img alt="image" class="img-circle" src="img/a8.jpg" height="48px" width="48px">
+                        </div>
+                        <div class = "row col-xs-10 ">
+                            <div class = " col-sm-12 tl-margin">
+                                <b>bjstdmngbgr05.thoughtworks.com</b> &nbsp| idle | 192.168.1.5 | /var/lib/cruise-agent
+                            </div>
+                            <div class = "col-sm-12 tl-margin">
+                                <b>+ <u>Specify Resources</u></b> | Resources:  <i class="fa fa-times"></i>
+                             
+                                <div class="pull-right text-right">
+                                   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <i class="fa fa-ban"></i><u> Deny</u>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>                           
+
+                                  
+
+
+                                </div>
+                        </div><div class="col-lg-2">
                            <div class="ibox float-e-margins">
                             <div class="ibox-title">
                                 
